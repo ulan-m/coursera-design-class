@@ -1,0 +1,1 @@
+"use strict";angular.module("courseraDesignClassApp",["ui.router"]).config(["$stateProvider","$urlRouterProvider",function(a,b){b.otherwise("/"),a.state("main",{url:"/",templateUrl:"views/main.html",controller:"MainCtrl"})}]),angular.module("courseraDesignClassApp").controller("MainCtrl",["$scope",function(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}]);
