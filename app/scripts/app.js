@@ -2,8 +2,10 @@
 
 angular
     .module('courseraDesignClassApp', [
-        'ui.router'
-    ]).config(function($stateProvider, $urlRouterProvider) {
+        'ui.router',
+        'ngDisqus'
+    ]).config(function($stateProvider, $urlRouterProvider, $disqusProvider, $locationProvider) {
+        $locationProvider.hashPrefix('!');
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('main', {
@@ -21,4 +23,6 @@ angular
                 templateUrl: 'views/page.html',
                 controller: 'PageCtrl'
             });
+
+        $disqusProvider.setShortname('courseradesignclass');
     });
