@@ -15,7 +15,7 @@ angular
             })
             .state('main.home', {
                 url: '/',
-                templateUrl: 'views/home.html',
+                templateUrl: 'views/pages/home.html',
                 controller: 'PageCtrl'
             })
             .state('main.page', {
