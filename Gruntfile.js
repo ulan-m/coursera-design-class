@@ -319,6 +319,7 @@ module.exports = function(grunt) {
                 'copy:styles'
             ],
             dist: [
+                'recess',
                 'copy:styles',
                 'imagemin',
                 'svgmin'
